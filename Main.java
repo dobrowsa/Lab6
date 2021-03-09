@@ -25,7 +25,7 @@ class Tree {
     leavesFall = false;
     leafColor = "";
   }
-  
+
   //Parameterized Constructor
   Tree(String aTreeName, String aTreeType, boolean aLeavesFall, String aLeafColor) {
     treeName = aTreeName;
@@ -34,7 +34,7 @@ class Tree {
     leafColor = aLeafColor;
   }
 
-  //Mutator Methods
+  //Accessor Methods
   String getTreeName() {
     return treeName;
   }
@@ -51,7 +51,7 @@ class Tree {
     return leafColor;
   }
 
-  //Accessor Methods
+  //Mutator Methods
   void setTreeName(String theName) {
     treeName = theName;
   }
@@ -72,7 +72,7 @@ class Tree {
   void print() {
     // Conditional Operator used for converting Boolean variable into String Status to print properly
     String leavesFallStatus = leavesFall ? "does" : "does not";
-  
+
     System.out.println();
     System.out.println("This is a " + treeName + " tree. It is a " + treeType + " and its leaves are currently " + leafColor + ". It " + leavesFallStatus + " lose its leaves for the winter.");
   }
